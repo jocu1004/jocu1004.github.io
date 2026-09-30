@@ -52,6 +52,13 @@
   a { color: var(--inju); word-break: break-all; }
   a:hover, a:focus { color: var(--tx); }
   .back { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 15px; }
+  /* 179 — 맨 위 「English below」 · 영어 전문 (한국어 아래 · 줄로 가른다) */
+  .lang { margin: 0 0 20px; font-size: 15px; }
+  .lang a { text-decoration: none; }
+  .en { margin-top: 56px; padding-top: 32px; border-top: 1px solid var(--line); }
+  .en h1 { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+  .en .en-title { margin-top: 12px; }
+  .en p, .en h2 { overflow-wrap: break-word; }
   .back a { text-decoration: none; }
   @media (max-width: 400px) {
     main { padding-top: 44px; }
@@ -61,6 +68,7 @@
 </head>
 <body>
 <main>
+  <p class="lang"><a href="#english" lang="en">English below</a></p>
   <h1>점지 개인정보 처리방침</h1>
   <p class="date">시행일: 2026년 9월 28일</p>
 
@@ -128,6 +136,85 @@
 
   <h2>10. 고지의 의무</h2>
   <p>이 방침의 내용이 변경되는 경우 시행일 전에 앱 또는 이 페이지를 통해 알립니다.</p>
+  <p>바뀐 방침은 새 시행일과 함께 이 페이지에 게시합니다.</p>
+
+  <h2>11. 추적 거부 신호</h2>
+  <p>점지는 사용자를 추적하지 않으며, 브라우저·기기의 추적 거부(Do Not Track) 신호와 관계없이 같은 방식으로 동작합니다.</p>
+
+  <!-- ★ 179 — 아래는 위 한국어를 그대로 옮긴 영어 전문이다. 새 내용을 짓지 않았다 -->
+  <section id="english" lang="en" class="en">
+    <h1>English</h1>
+    <h2 class="en-title">JEOMJI (점지) Privacy Policy</h2>
+    <p class="date">Effective date: September 28, 2026</p>
+
+    <p class="intro">
+      최민섭 (the "Developer") provides the mobile app "JEOMJI" (점지, the "App")
+      and handles users' personal information as follows.
+    </p>
+
+    <h2>1. No sign-up</h2>
+    <p>The App does not require sign-up, log-in, or account creation.</p>
+    <p>The Developer does not collect or keep any information that can identify users.</p>
+
+    <h2>2. Information users enter in the App</h2>
+    <p>
+      To see fortunes and dream readings, users may enter their date of birth, time of birth, gender, name,
+      dream content, and things that happened to them today.
+    </p>
+    <p>All of this information is stored only on the user's device and is not sent to the Developer's server.</p>
+    <p>The Developer cannot view this information.</p>
+    <p>All fortune and dream-reading calculations are done on the device.</p>
+
+    <h2>3. Advertising</h2>
+    <p>The App shows ads through Google AdMob.</p>
+    <p>
+      Google and its advertising partners may collect and use the advertising identifier, device information,
+      approximate location (country/region level), and app usage information to provide ads.
+    </p>
+    <p>
+      For details, please see Google's policy.<br>
+      <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a>
+    </p>
+    <p>Users can reset the advertising identifier or turn off personalized ads in their device settings.</p>
+    <p class="dash">- Android: Settings &gt; Google &gt; Ads</p>
+    <p class="dash">- iOS: Settings &gt; Privacy &amp; Security &gt; Tracking</p>
+
+    <h2>4. Notifications</h2>
+    <p>The App uses the device's notification permission only if the user turns notifications on.</p>
+    <p>Notifications are scheduled on the device, and the Developer does not collect the user's device token.</p>
+
+    <h2>5. Retention and deletion</h2>
+    <p>All information the App stores is only on the user's device.</p>
+    <p>It is deleted when the App is deleted.</p>
+    <p>Users can also delete it themselves at any time with "전체 기록 지우기" (Delete all records) on the App's settings screen.</p>
+
+    <h2>6. Sharing with third parties</h2>
+    <p>The Developer does not provide users' personal information to third parties.</p>
+    <p>Information collected by the advertising companies in Section 3 is governed by those companies' policies.</p>
+
+    <h2>7. Children under 14</h2>
+    <p>
+      The App is not directed at children under the age of 14,
+      and does not knowingly collect personal information from children under 14.
+    </p>
+
+    <h2>8. Users' rights</h2>
+    <p>
+      Because the information the App stores is on the device, users can view and delete it themselves
+      through the App's settings screen or by deleting the App.
+    </p>
+
+    <h2>9. Privacy officer</h2>
+    <p>Name: 최민섭</p>
+    <p>Email: <a href="mailto:chris.choi330@gmail.com">chris.choi330@gmail.com</a></p>
+
+    <h2>10. Notice of changes</h2>
+    <p>If this policy changes, we will give notice through the App or this page before the effective date.</p>
+    <p>The changed policy will be posted on this page with a new effective date.</p>
+
+    <h2>11. Do Not Track signals</h2>
+    <p>JEOMJI does not track users, and it works the same way regardless of any Do Not Track signal from the browser or device.</p>
+  </section>
 
   <p class="back"><a href="./">← 점지</a></p>
 </main>
